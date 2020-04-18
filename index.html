@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="text-center">
+            <h1>Password Generator</h1>
+            <hr>
+        </header>
+
+        <button id="startpwdgenerator">I Want to Generate a New Secure Password!</button>
+
+        <form id="passwordgenerator">
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="passwordlength">Password Length:</label>
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" id="passwordlength" placeholder="Password Length">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="symbols">Include Symbols:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="symbols" name="symbols">
+                <label for="symbols">(e.g. @#$%)</label>
+              </div>
+            </div>
+            <div class="row">            
+              <div class="col-md-4">  
+                <label for="numbers">Include Numbers:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="numbers" name="numbers">
+                <label for="numbers">(e.g. 123456)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="lowercase">Include Lowercase Characters:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="lowercase" name="lowercase">
+                <label for="lowercase">(e.g. abcdefgh)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="uppercase">Include Uppercase Characters:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="uppercase" name="uppercase">
+                <label for="uppercase">(e.g. ABCDEFGH)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="similarchar">Exclude Similar Characters:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="similarchar" name="similarchar">
+                <label for="similarchar">(e.g. i,l,1,L,o,0,O)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="ambiguous">Exclude Ambiguous Characters:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="ambiguous" name="ambiguous">
+                <label for="ambiguous">(e.g. { } [ ] ( ) / \ ' " ` ~ , ; : .)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+                <label for="auto">Auto-Select:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="checkbox" id="auto" name="auto">
+                <label for="auto">(select the password automatically)</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">  
+              </div>
+              <div class="col-md-8">
+                <button class="btn btn-light" type="submit" id="submitform">Generate Password</button>
+                <p id="validationcomment" style="color:darkred;"></p>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <label for="newpassword" id="newpasswordlabel">Your Secure Password:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="newpassword" placeholder="Your Secure Password">
+                </div>
+            </div>
+        </form>
+    </div>
+  
+    <script src="./script.js"></script>
+</body>
+</html>

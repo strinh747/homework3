@@ -1,0 +1,28 @@
+.container {
+    max-width: 900px;
+    background-color: #fbda57;
+    border-style: outset;
+    padding: 40px 80px 40px 80px;
+    color: #216a61;
+}
+
+#passwordgenerator {
+    display: none;
+}
+
+#startpwdgenerator {
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    font-size: 24px;
+    color: #162b29;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: #fbda57;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+button {
+    border-style: outset;
+}
